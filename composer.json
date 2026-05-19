@@ -1,5 +1,5 @@
 {
-    "name": "tallcms/filament-registration",
+    "name": "wuxejian/filament-registration",
     "description": "Filament-native user registration with pluggable captcha (Cloudflare Turnstile, Google reCAPTCHA v3) and configurable default-role assignment.",
     "type": "library",
     "version": "1.2.0",
