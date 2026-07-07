@@ -69,6 +69,10 @@ class FilamentRegistrationServiceProvider extends ServiceProvider
     private function mergeDbSettingsIntoConfig(): void
     {
         try {
+            if ($this->app->runningInConsole() && ! $this->app->runningUnitTests()) {
+                return;
+            }
+
             $stored = app(SettingsRepository::class)->all();
         } catch (\Throwable $e) {
             return;
